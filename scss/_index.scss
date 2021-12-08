@@ -1,0 +1,91 @@
+.font-Cormorant-Garamond{
+    font-family:"Cormorant Garamond";
+}
+
+.font-Noto-Serif{
+    font-family: "Noto Serif TC";
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.w-90{
+    width: 90%;
+}
+
+
+ul{
+   list-style: none; 
+}
+
+.ml-4{
+    margin-left: 24px;
+}
+
+.ml-8{
+    margin-left: 36px;
+}
+
+.mt-62{
+    margin-top: 3.875em;
+}
+
+.ring, .glasses{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ring:before, .necklace:before, .glasses:before{
+    content:'';
+    display: block;
+    margin-top: -94px;
+    height: 94px;
+    visibility: hidden;
+}
+
+.banner{
+    height: 100%;
+    background-color: $primary;
+}
+
+
+.navbar{
+    background-color: #fff;
+}
+
+.btn-gray200{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+
+
+.bg-necklace{
+    background-color: antiquewhite;
+}
+
+
+.bg-title{
+    background-color:rgba(227, 144, 61, 0.558);   
+}
+
+.bg-text{
+    background-color: rgba(223, 178, 143, 0.359);
+}
+
+footer{
+    background: rgb(221, 147, 74);
+    color: #fff;
+}
+
+
+.heart:hover, .cart:hover{
+    color: #e08c43;
+}
+
+
+
+
+
+
+  

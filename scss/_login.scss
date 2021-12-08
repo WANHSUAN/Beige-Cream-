@@ -1,0 +1,49 @@
+.bg{
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-main{
+    background-image: url(../img/bg.jpg);
+}
+
+
+.lh-22{
+    line-height: 1.875rem;
+}
+
+
+.registerBtn{
+    color: #f4bd8d;
+}
+
+
+.loginBtn{
+    color: #fff;
+}
+
+.registerBtn:hover{
+    background-color: #f4bd8d;
+    color: #fff;
+}
+
+
+.loginBtn:hover{
+    background-color: #eb8b37;
+    color:#fff;
+}
+
+
+.mt-md-70{
+    margin-top: 8.6rem;
+}
+
+
+.mb-md-70{
+    margin-bottom: 8rem;    
+}
+
+
+
+
+
