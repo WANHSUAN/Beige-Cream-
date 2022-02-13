@@ -11503,6 +11503,11 @@ ul {
   margin-top: 3.875em;
 }
 
+#ccount {
+  color: red;
+  font-size: 20px;
+}
+
 .ring, .glasses {
   padding-left: 50px;
   padding-right: 50px;
@@ -11652,5 +11657,21 @@ footer {
 
 .fs-xxs {
   font-size: 0.875rem;
+}
+
+.hide {
+  display: none;
+}
+
+.box {
+  padding: 10px;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.p-6 {
+  padding: 4.5rem;
 }
 /*# sourceMappingURL=all.min.css.map */
