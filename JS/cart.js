@@ -167,3 +167,17 @@ function checkAllChecked() {
     }
     allCheck.checked = isSelected; // allCheck 勾選
 }
+
+// 清空購物車
+
+var deleteAll = document.getElementById('deleteAll');
+deleteAll.onclick = function() {
+    var tr = this.parentNode.parentNode.children[1];
+    var pid = tr.getAttribute('pid'); // <tr pid="1">
+    if(confirm('確定刪除？')) {
+        // 移除
+        tr.remove();
+        listObj = deleteObjByPid(pid); // 刪除 Cookies 裡的 <tr pid="1">
+    }
+    box.className = 'box'; 
+}
