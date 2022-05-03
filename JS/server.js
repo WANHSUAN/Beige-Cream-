@@ -23,8 +23,8 @@ function checkObjByPid(id) {
 
 /*
     功能：更新本地數據
-    參數：arr 數組對象
-    返回一個值：最新的本地轉換後的數組對象
+    參數：arr 陣列
+    回傳一個值：最新的本地轉換後的陣列
 */
 
 function updateData(arr) {
@@ -39,7 +39,7 @@ function updateData(arr) {
 
 /*
     獲取商品的總數量
-    返回：數字
+    回傳數字
 */
 
 function getTotalCount() {
@@ -71,7 +71,7 @@ function updateObjById(id, num) {
 
 /*
     獲取本地數據
-    返回 數組對象
+    回傳陣列
 */
 
 function getAllData() {

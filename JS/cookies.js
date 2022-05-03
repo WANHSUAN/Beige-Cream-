@@ -16,6 +16,7 @@ var cookieObj = {
     secure:boolean true https false或undeinfed
     */
     set: function(o) {
+        // encodeURIComponent(str) ->  函數通過將一個、兩個、三個或四個表示字符的 UTF-8 編碼的轉譯序列替換某些字符的每個實例來編碼 URI（對於由兩個“代理”字符組成的字符而言，將僅是四個轉譯序列）
         var cookieStr = encodeURIComponent(o.name) + "=" + encodeURIComponent(o.value);
         if(o.expires) {
             cookieStr += ";expires=" + o.expires;

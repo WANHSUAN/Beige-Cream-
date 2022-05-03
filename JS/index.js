@@ -14,11 +14,11 @@ if(!listStr) { // 沒有購物車 datas json
     listStr = cookieObj.get('datas');
 }
 
-// 數組
+// 陣列
 
 var listObj = JSON.parse(listStr);
 
-/* 循環遍歷數組，獲取每一個對象中的 pCount 值相加總和 */
+/* 循環遍歷陣列，獲取每一個對象中的 pCount 值相加總和 */
 var totalCount = 0; // 默認為 0
 for(var i = 0, len = listObj.length;i < len; i++) {
     totalCount = listObj[i].pCount + totalCount;
