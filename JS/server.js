@@ -12,13 +12,13 @@ function checkObjByPid(id) {
     var jsonStr = cookieObj.get('datas');
     var jsonObj = JSON.parse(jsonStr);
     var isExist = false;
-    for(var i = 0, len = jsonObj.length; i < len; i++) {
+    for(var i = 0; i < jsonObj.length; i++) { // 循環遍歷 jsonObj 內的 pid，如果 == id ，為存在，所以停止循環
         if(jsonObj[i].pid == id) {
             isExist = true;
             break;
         }
     }
-    return isExist; //return false;
+    return isExist; //如果不存在就 return false;
 }
 
 /*
@@ -28,13 +28,13 @@ function checkObjByPid(id) {
 */
 
 function updateData(arr) {
-    var jsonStr = JSON.stringify(arr);
+    var jsonStr = JSON.stringify(arr); // 將 JS 值轉換成 JSON 值
     cookieObj.set({
         name: 'datas',
         value: jsonStr
     });
-    jsonStr = cookieObj.get('datas');
-    return JSON.parse(jsonStr);
+    jsonStr = cookieObj.get('datas'); // 取得 cookie 值
+    return JSON.parse(jsonStr); // 將 JSON 值轉換成 JS 值，再回傳
 }
 
 /*
@@ -47,8 +47,8 @@ function getTotalCount() {
     var totalCount = 0; // 默認為 0
     var jsonStr = cookieObj.get('datas');
     var listObj = JSON.parse(jsonStr);
-    for(var i = 0, len = listObj.length; i < len; i++) {
-        totalCount = listObj[i].pCount + totalCount;
+    for(var i = 0; i < listObj.length; i++) {
+        totalCount += listObj[i].pCount;
     }
     return totalCount;
 }
@@ -60,13 +60,13 @@ function getTotalCount() {
 function updateObjById(id, num) {
     var jsonStr = cookieObj.get('datas');
     var listObj = JSON.parse(jsonStr);
-    for(var i = 0, len = listObj.length; i < len; i++) {
-        if(listObj[i].pid == id) {
-            listObj[i].pCount = listObj[i].pCount + num;
+    for(var i = 0; i < listObj.length; i++) {
+        if(listObj[i].pid == id) { // datas 的 pid == id，就加該 datas 的 pCount 到 num，然後停止
+            listObj[i].pCount += num;
             break;
         }
     }
-    return updateData(listObj)
+    return updateData(listObj);
 }
 
 /*
@@ -81,14 +81,26 @@ function getAllData() {
 }
 
 function deleteObjByPid(id) {
-    var lisObj = getAllData();
-    for(var i = 0, len = lisObj.length; i < len; i++) {
-        if(lisObj[i].pid == id) {
-            lisObj.splice(i, 1);
+    var listObj = getAllData();
+    for(var i = 0; i < listObj.length; i++) {
+        if(listObj[i].pid == id) { 
+            listObj.splice(i, 1); // 刪除自己後停止循環
             break;
         }
     }   
-    updateData(lisObj);
-    return lisObj;
+    updateData(listObj);
+    return listObj;
+}
+
+
+function deleteAllObjByPid(id) {
+    var listObj = getAllData();
+    for(var i = 0; i < listObj.length; i++) {
+        if(listObj[i].pid == id[i]) { 
+            listObj.splice(i);
+        }
+    }   
+    updateData(listObj);
+    return listObj;
 }
 

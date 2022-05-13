@@ -1,27 +1,53 @@
 /*
+
 思路：
-第一步：當頁面加載完後，根據本地的數據，動態生成表格（購物車列表）
+第一步：
+當頁面加載完後，根據本地的數據，動態生成表格（購物車列表）
 獲取所要操作的節點對象
 判斷購物車中是否有數據？
 有： 顯示出購物列表
 沒有： 提示購物車為空
 
-第二步：當購物車列表動態生成後，獲取tbody里所有的 checkeBox 標籤節點對象，看那個被選中就獲取對應行小計進行總價格運算。
+第二步：
+當購物車列表動態生成後，獲取tbody里所有的 checkeBox 標籤節點對象，看那個被選中就獲取對應行小計進行總價格運算
 
 第三步：
 為每一個 checkbox 添加一個 onchange 事件，根據操作更改總價格
 
-第四步：全選
+第四步：
+全選
 
 第五步：
 為加減按鈕添加一個鼠標點擊事件
 更改該商品的數量
 
-第六步：刪除
+第六步：
+刪除
 獲取所有的刪除按鈕
 為刪除按鈕添加一個鼠標點擊事件
 刪除當前行，並更新本地數據
+
 */
+
+
+/* 購物車標誌變化 */
+
+//顯示商品總數量的標籤節點對象
+var ccount = document.getElementById('ccount');
+//約定好用名稱為 datas 的 cookie 來存放購物車裡的數據信息， datas 里所存放的就是一個 json 字串
+var listStr = cookieObj.get('datas');
+
+// 陣列
+
+var listObj = JSON.parse(listStr);
+
+/* 循環遍歷陣列，獲取每一個對象中的 pCount 值相加總和 */
+var totalCount = 0; // 默認為 0
+for(var i = 0;i < listObj.length; i++) {
+    totalCount += listObj[i].pCount;
+}
+ccount.innerHTML = totalCount; // 總和賦值給顯示商品總數量的標籤節點對象
+
 
 var listObj = getAllData();
 var table = document.getElementById('table');
@@ -35,7 +61,7 @@ if(listObj.length == 0) { // 購物車為空
 }else {
     box.className = 'box hide'; // 隱藏 #box
     table.className = ''; // 顯示 table
-    for(var i = 0, len = listObj.length; i < len; i++) {
+    for(var i = 0; i < listObj.length; i++) {
         var tr = document.createElement('tr'); //創建 tr
         tr.setAttribute('pid', listObj[i].pid); // <tr pid="1"></tr>
         tr.setAttribute('class', 'row align-items-center text-align-center font-Noto-Serif border-bottom');
@@ -58,19 +84,20 @@ var cks = document.querySelectorAll('tbody .ck');
 function getTotalPrice() {
     cks = document.querySelectorAll('tbody .ck');
     var sum = 0;
-    for(var i = 0, len = cks.length;i < len; i++) {
+    for(var i = 0;i < cks.length; i++) {
         if(cks[i].checked) { // 如果當前被選中
             var tr = cks[i].parentNode.parentNode;
             var temp = tr.children[5].firstElementChild.innerHTML; // 物品總價格
-            sum = Number(temp) + sum;
+            sum += Number(temp);
         }
     }
     return sum;
 }
 
 /* 循環遍歷為每一個 checkbox 添加一個 onchange 事件 */
+// onchange() -> 當元素發生改變時使用
 
-for(var i = 0, len = cks.length; i < len; i++) {
+for(var i = 0; i < cks.length; i++) {
     cks[i].onchange = function() {
         checkAllChecked();
         totalPrice.innerHTML = getTotalPrice();
@@ -81,12 +108,10 @@ for(var i = 0, len = cks.length; i < len; i++) {
 
 
 allCheck.onchange = function() {
-    if(this.checked) { // 勾選
-        for(var i = 0, len = cks.length; i < len; i++) {
+    for(var i = 0; i < cks.length; i++) {
+        if(this.checked) { // 勾選
             cks[i].checked = true;
-        }
-    }else { // 不勾選
-        for(var i = 0, len = cks.length; i < len; i++) {
+        } else { // 不勾選
             cks[i].checked = false;
         }
     }
@@ -100,25 +125,26 @@ var ups = document.querySelectorAll('.up');
 
 // 一組刪除的按鈕
 var dels = document.querySelectorAll('.del');
-for(var i = 0, len = downs.length; i < len; i++) {
+for(var i = 0; i < downs.length; i++) {
     // 減的按鈕
     downs[i].onclick = function() {
         // 下一個兄弟節點
         var txtObj = this.nextElementSibling; // <input type="text">
         var tr = this.parentNode.parentNode; // tr
         var pid = tr.getAttribute('pid'); // <tr pid="1">
-        txtObj.value = txtObj.value - 1; // value - 1
+        txtObj.value = Number(txtObj.value) - 1; // value - 1
         if(txtObj.value < 1) { // 如果 value < 1
             txtObj.value = 1;
             updateObjById(pid, 0) // value = 1, value 不變
         }else {
             updateObjById(pid, -1) // value >= 1, value - 1
         }
-        tr.children[0].firstElementChild.checked = true;
+        tr.children[0].firstElementChild.checked = true; // checkbox 勾選
         checkAllChecked();
         var price = tr.children[4].firstElementChild.innerHTML; // 400
         tr.children[5].firstElementChild.innerHTML = price * txtObj.value; // 400 = 400 * txtObj.value
         totalPrice.innerHTML = getTotalPrice();
+        ccount.innerHTML = getTotalCount();
     }
     // 加的按鈕
     ups[i].onclick = function() {
@@ -129,10 +155,11 @@ for(var i = 0, len = downs.length; i < len; i++) {
         txtObj.value = Number(txtObj.value) + 1; // value + 1
         updateObjById(pid, 1); // value + 1
         tr.children[0].firstElementChild.checked = true; // checkbox 勾選
-        checkAllChecked()
+        checkAllChecked();
         var price = tr.children[4].firstElementChild.innerHTML; // 400
         tr.children[5].firstElementChild.innerHTML = price * txtObj.value; // 400 = 400 * txtObj.value
         totalPrice.innerHTML = getTotalPrice();
+        ccount.innerHTML = getTotalCount();
     }
     // 刪除的按鈕
     dels[i].onclick = function() {
@@ -151,6 +178,7 @@ for(var i = 0, len = downs.length; i < len; i++) {
             table.className = ''; // 顯示 table
         }
         totalPrice.innerHTML = getTotalPrice();
+        ccount.innerHTML = getTotalCount();
     }
 }
 
@@ -159,7 +187,7 @@ for(var i = 0, len = downs.length; i < len; i++) {
 function checkAllChecked() {
     // 全選是否會選中
     var isSelected = true; // 勾選
-    for(var j = 0, len = cks.length; j < len; j++) {
+    for(var j = 0; j < cks.length; j++) {
         if(cks[j].checked == false) { // 如果當前的 checkbox 不勾選
             isSelected = false; // 不勾選
             break; // 停止且印出
@@ -172,12 +200,25 @@ function checkAllChecked() {
 
 var deleteAll = document.getElementById('deleteAll');
 deleteAll.onclick = function() {
-    var tr = this.parentNode.parentNode.children[1];
-    var pid = tr.getAttribute('pid'); // <tr pid="1">
+    var table = this.parentNode.parentNode.children[1]; // table
+    var tr = table.children[1].children;
+    var pid = [];
+    for(var i = 0; i < tr.length;i++) {
+        pid.push(tr[i].attributes[0].value);
+    }
+
     if(confirm('確定刪除？')) {
         // 移除
-        tr.remove();
-        listObj = deleteObjByPid(pid); // 刪除 Cookies 裡的 <tr pid="1">
+        table.remove();
+        listObj = deleteAllObjByPid(pid); // 刪除 Cookies 裡的 <tr pid="1">
+
+        if(listObj.length == 0) { // 如果購物車為空
+            box.className = 'box'; // 顯示 box
+            table.className = 'hide'; // 隱藏 table
+        }
     }
-    box.className = 'box'; 
+    totalPrice.innerHTML = getTotalPrice();
+    ccount.innerHTML = getTotalCount();
 }
+
+

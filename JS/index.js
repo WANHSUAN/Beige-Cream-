@@ -20,24 +20,24 @@ var listObj = JSON.parse(listStr);
 
 /* 循環遍歷陣列，獲取每一個對象中的 pCount 值相加總和 */
 var totalCount = 0; // 默認為 0
-for(var i = 0, len = listObj.length;i < len; i++) {
-    totalCount = listObj[i].pCount + totalCount;
+for(var i = 0;i < listObj.length; i++) {
+    totalCount += listObj[i].pCount;
 }
 
-ccount.innerHTML = totalCount;
+ccount.innerHTML = totalCount; // 總和賦值給顯示商品總數量的標籤節點對象
 
 /* 循環為每一個按鈕添加點擊事件 */
 
-for(var i = 0, len = btns.length; i < len; i++) {
+for(var i = 0; i < btns.length; i++) {
     btns[i].onclick = function() {
         var div = this.parentNode.parentNode.parentNode.parentNode;
         // 獲取自定義屬性
         var pid = div.getAttribute('pid');
         // 獲取所有子節點
         var arrs = div.children;
-        if(checkObjByPid(pid)) {
-            listObj = updateObjById(pid, 1)
-        }else {
+        if(checkObjByPid(pid)) { // 此商品已在購物車內
+            listObj = updateObjById(pid, 1);
+        }else { // 不在購物車內，就建立一個索引
             var imgSrc = arrs[0].firstElementChild.firstElementChild.src;
             var pName = arrs[1].firstElementChild.lastElementChild.innerHTML;
             var price = arrs[1].lastElementChild.firstElementChild.firstElementChild.innerHTML;
@@ -48,10 +48,9 @@ for(var i = 0, len = btns.length; i < len; i++) {
                 price: price,
                 pCount: 1 // 數量
             };
-            listObj.push(obj)
+            listObj.push(obj);
             listObj = updateData(listObj);
         }
         ccount.innerHTML = getTotalCount();
-        
     }
 }
