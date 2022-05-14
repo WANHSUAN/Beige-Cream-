@@ -15,6 +15,9 @@
 <!--FA圖示-->
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
+<!-- 操作 cookie 的 js 文件 -->
+<script type="text/javascript" src="../JS/cookies.js"></script>
+
 </head>
 <body>
 
@@ -59,7 +62,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./cart.html">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="">Cart</span>
+                            <span>Cart</span>
+                            <i id="ccount">0</i>
                         </a>
                     </li>    
                 </ul>
@@ -70,7 +74,7 @@
     <!--main 區塊-->
 
     <div class="rings container">
-        <div class="row mt-68 mb-28 d-flex">
+        <div class="row mt-68 mb-28 d-flex" pid="4">
             <div class="col-12 col-lg-2 font-Noto-Serif d-none d-lg-block">
                 <div class="ms-1">
                     <h5 class="font-Cormorant-Garamond fs-5 fw-bold ">Earrings</h5>
@@ -159,34 +163,24 @@
             <div class="col-12 col-lg-4 mt-sm-3 mt-lg-0">
                 <h2 class="titleText font-Noto-Serif fw-bold mb-4">冬季戒指組</h2>
                 <p class="font-Noto-Serif mt-3 mb-4 fs-5">適合冬季搭配的四種戒指</p>
-                <small class="font-Cormorant-Garamond fs-6">NT$480</small>
-                <form action="#" class="font-Cormorant-Garamond d-flex mt-3">
-                    <input type="number" id="number" name="amount" value="1" min="1" max="20"
-                        class="
-                        d-inline-block
-                        rounded-start
-                        border-beige border-1
-                        w-100
-                        p-3
-                        ">
+                <small class="font-Cormorant-Garamond fs-6">NT$<span>480</span></small>
+                <form action="#" class="font-Cormorant-Garamond mt-2 d-flex py-3">
                     <input type="button" id="button" value="加入購物車" data-bs-toggle="modal" data-bs-target="#addcart"
                         class="
                         beigeBtn
                         font-Noto-Serif
                         d-inline-block
-                        rounded-end
-                        w-100
-                        p-3
-                        border-beige border-1
-                        bg-beige
+                        rounded
+                        w-40
                         ">
-                </form>
-                <div class="mt-2 d-flex p-2">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#favorite">
-                        <i class="fas fa-heart beige fs-5 heart"></i>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#favorite" class="heart1">
+                        <div class="ms-3 d-flex btn border-beige border-1 registerBtn ps-1">
+                            <i class="fas fa-heart my-2 ms-2"></i>
+                            <p class="ps-2 my-1 font-Noto-Serif fs-6">加入我的收藏</p>
+                        </div>
                     </a>
-                    <p class="ps-3 font-Noto-Serif fs-6">加入我的收藏</p>
-                </div>
+                </form>
+            
                 <div class="font-Noto-Serif">
                     <div class="mt-2">
                         <h4 class="fs-6 fw-bold">商品材質：</h4>
@@ -268,10 +262,11 @@
     </footer>
 
 
-
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<script src="../JS/server.js"></script>
+<!-- 操作購物車頁面的 cart.js -->
+<script src="../JS/page.js"></script>
+
 </body>
 </html>

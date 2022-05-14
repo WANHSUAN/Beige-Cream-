@@ -11616,6 +11616,14 @@ footer {
   border-left: 1px solid #f4bd8d;
 }
 
+.heart1 {
+  color: #f4bd8d;
+}
+
+.heart1:hover {
+  color: #fff;
+}
+
 .bg {
   background-position: center center;
   background-size: cover;
