@@ -11555,6 +11555,15 @@ footer {
   color: #e08c43;
 }
 
+.changeImg:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-box-shadow: 2px 2px 5px 5px rgba(226, 180, 133, 0.558);
+          box-shadow: 2px 2px 5px 5px rgba(226, 180, 133, 0.558);
+}
+
 .mt-68 {
   margin-top: 3.75rem;
 }
