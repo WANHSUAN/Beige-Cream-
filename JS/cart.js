@@ -71,9 +71,9 @@ if(listObj.length == 0) { // 購物車為空
         '<td class="m-md-0 m-3 p-1 p-md-3 col-md-2 col-2">' + '<img src="' + listObj[i].pImg + '" alt="" class="w-100" />' + '</td>' +
         '<td class="p-3 p-md-3 col-md-2 col-3">' + listObj[i].pName + '</td>' +
         '<td class="p-3 col-md-2 col-5">' + '<button class="down btn btn-outline-info"> - </button><input type="text" value="' + listObj[i].pCount + '" readonly="readonly" class="w-40 font-Cormorant-Garamond p-1 m-3 text-align-center" /><button class="up btn btn-outline-info"> + </button>' + '</td>' +
-        '<td class="p-3 col-md-2 col-5 font-Cormorant-Garamond">' + 'NT$<span>' + listObj[i].price + '</span>' + '</td>' +
+        '<td class="p-3 col-md-2 col-4 font-Cormorant-Garamond">' + 'NT$<span>' + listObj[i].price + '</span>' + '</td>' +
         '<td class="p-3 col-md-2 col-5 font-Cormorant-Garamond">' + 'NT$<span>' + listObj[i].price * listObj[i].pCount + '</span>' + '</td>' +
-        '<td class="p-2 col-md-1 col-2">' + '<button class="del btn btn-outline-secondary font-Cormorant-Garamond">x</button>' + '</td>';
+        '<td class="p-md-3 ps-45 col-md-1 col-3">' + '<button class="del btn btn-outline-secondary font-Cormorant-Garamond">x</button>' + '</td>';
         tbody.appendChild(tr);
     }
 }

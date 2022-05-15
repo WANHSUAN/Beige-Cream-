@@ -11633,6 +11633,10 @@ footer {
   color: #fff;
 }
 
+.w-md-40 {
+  width: 40%;
+}
+
 .bg {
   background-position: center center;
   background-size: cover;
@@ -11695,5 +11699,9 @@ footer {
 
 .empty {
   height: 70px;
+}
+
+.ps-45 {
+  padding-left: 2.3rem;
 }
 /*# sourceMappingURL=all.min.css.map */
