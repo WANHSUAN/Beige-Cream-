@@ -47,7 +47,7 @@ for(var i = 0;i < listObj.length; i++) {
     totalCount += listObj[i].pCount;
 }
 ccount.innerHTML = totalCount; // 總和賦值給顯示商品總數量的標籤節點對象
-
+ 
 
 var listObj = getAllData();
 var table = document.getElementById('table');
