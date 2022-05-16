@@ -39,6 +39,8 @@ login.addEventListener('click', function() {
                 location.href = 'member.html';  
             } else {
                 alert('沒有此帳號或是使用者帳號密碼錯誤！');
+                username.value = '';
+                password.value = '';
             }
         }
     }
