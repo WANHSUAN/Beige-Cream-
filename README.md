@@ -1,11 +1,11 @@
 # Beige-Cream-
  
-專案主題：
+### 專案主題：
 
 RWD 切版的虛擬飾品品牌
 
 
-專案介紹：
+### 專案介紹：
 
 1. 使用 Bootstrap 5 排版
 2. 購物車功能：使用到 JavaScript 中的 BOM 操作、DOM 操作、表格操作、Cookie、JSON
