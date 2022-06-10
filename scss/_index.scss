@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
 .font-Cormorant-Garamond{
     font-family:"Cormorant Garamond";
 }
@@ -83,6 +89,7 @@ ul{
 footer{
     background: rgb(221, 147, 74);
     color: #fff;
+    height: 104px;
 }
 
 

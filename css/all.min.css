@@ -11471,6 +11471,11 @@ fieldset:disabled .btn {
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .font-Cormorant-Garamond {
   font-family: "Cormorant Garamond";
 }
@@ -11549,6 +11554,7 @@ ul {
 footer {
   background: #dd934a;
   color: #fff;
+  height: 104px;
 }
 
 .heart:hover, .cart:hover {
@@ -11676,6 +11682,10 @@ footer {
   margin-bottom: 8rem;
 }
 
+.wrapper {
+  min-height: calc(100% - 104px);
+}
+
 .fs-xxs {
   font-size: 0.875rem;
 }
@@ -11695,10 +11705,6 @@ footer {
 
 .p-6 {
   padding: 4.5rem;
-}
-
-.empty {
-  height: 70px;
 }
 
 .ps-45 {
