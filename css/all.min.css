@@ -11492,6 +11492,10 @@ html, body {
   width: 90%;
 }
 
+.w-md-100 {
+  width: 100%;
+}
+
 ul {
   list-style: none;
 }

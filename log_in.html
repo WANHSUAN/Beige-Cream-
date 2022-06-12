@@ -23,7 +23,7 @@
         
         <!--導覽列-->
 
-        <nav class="navbar navbar-expand-lg navbar-light font-Cormorant-Garamond sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top font-Cormorant-Garamond navbar-light">
             <div class="container-fluid mx-4">
                 <h1 class="ml-md-4">
                     <a class="navbar-brand ms-5" href="./index.html">
@@ -74,17 +74,17 @@
         <div class="bg bg-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center mt-md-70 mb-md-70">
-                        <h2 class="fw-bold lh-base font-Cormorant-Garamond">Log in</h2>
+                    <div class="col-md-6 justify-content-center mt-md-70 mb-md-70 d-flex flex-column">
+                        <h2 class="lh-base font-Cormorant-Garamond fw-bold">Log in</h2>
                         <label for="email" class="form-label lh-22 font-Noto-Serif">帳號</label>
                         <input id="username" type="email" name="email" placeholder="email@example.com" class="form-control mb-3 font-Cormorant-Garamond">
                         <label for="password" class="form-label lh-22 font-Noto-Serif">密碼</label>
                         <input id="password" type="password" name="password" placeholder="Password" class="form-control mb-3 font-Cormorant-Garamond">
-                        <div class="button d-flex justify-content-between align-items-center mb-3 mb-md-5">
-                            <a href="#" class="beige font-Noto-Serif">忘記密碼</a>
+                        <div class="button justify-content-between align-items-center mb-3 mb-md-5 d-flex">
+                            <a href="#" class="font-Noto-Serif beige">忘記密碼</a>
                             <div class="font-Noto-Serif">
-                                <input id="register" type="button" class="btn border-beige border-1 registerBtn w-30" value="註冊">
-                                <input id="login" type="button" class="btn bg-beige loginBtn w-30" value="登入">
+                                <input id="register" type="button" class="btn w-30 border-1 border-beige registerBtn" value="註冊">
+                                <input id="login" type="button" class="btn w-30 bg-beige loginBtn" value="登入">
                             </div>
                         </div>
                     </div><!--col-md-6-->
@@ -95,9 +95,9 @@
 
     <!--footer-->
 
-    <footer class="py-md-4 py-3">
-        <div class="container d-flex justify-content-between align-align-center">
-            <div class="footer-info d-flex align-align-center">
+    <footer class="py-4">
+        <div class="container justify-content-between d-flex">
+            <div class="footer-info d-flex">
                 <a href="./index.html">
                     <img src="./img/logo_2/logo.png" style="width: 50px; height: 50px;"  class="rounded-pill" alt="logo-footer">
                 </a>
@@ -105,7 +105,7 @@
                     © 2021. All Rights Reserved.
                 </p>
             </div><!--footer-info-->
-            <ul class="footer-nav d-md-flex d-none mt-3">
+            <ul class="footer-nav mt-3 d-none d-md-flex">
                 <li class="ml-8">
                     <a href="#" class="text-white">
                         <i class="fab fa-facebook"></i>

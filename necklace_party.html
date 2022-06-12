@@ -25,7 +25,7 @@
 
         <!--導覽列-->
 
-        <nav class="navbar navbar-expand-lg navbar-light font-Cormorant-Garamond sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top font-Cormorant-Garamond navbar-light">
             <div class="container-fluid mx-4">
                 <h1 class="ml-md-4">
                     <a class="navbar-brand ms-5" href="./index.html">
@@ -77,9 +77,9 @@
 
         <div class="rings container">
             <div class="row mt-68 mb-28 d-flex" pid="10">
-                <div class="col-12 col-lg-2 font-Noto-Serif d-none d-lg-block">
+                <div class="col-12 col-lg-2 d-none d-lg-block font-Noto-Serif">
                     <div class="ms-1">
-                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold ">Earrings</h5>
+                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Earrings</h5>
                         <ul class="border-start-beige">
                             <li>
                                 <a href="./earrings_butterfly.html" class="product">
@@ -163,23 +163,16 @@
                     <img src="./img/華麗派對項鍊.jpg" class="w-100" alt="華麗派對項鍊">
                 </div><!--col-lg-6-->
                 <div class="col-12 col-lg-4 mt-sm-3 mt-lg-0">
-                    <h2 class="titleText font-Noto-Serif fw-bold mb-4">華麗派對項鍊</h2>
-                    <p class="font-Noto-Serif mt-3 mb-4 fs-5">使用不同大小的施華洛世奇水晶製成</p>
+                    <h2 class="titleText mb-4 font-Noto-Serif fw-bold">華麗派對項鍊</h2>
+                    <p class="mt-3 mb-4 font-Noto-Serif fs-5">使用不同大小的施華洛世奇水晶製成</p>
                     <small class="font-Cormorant-Garamond fs-6">NT$<span>1600</span></small>
-                    <form action="#" class="font-Cormorant-Garamond mt-2 d-flex py-3">
+                    <form action="#" class="mt-2 py-3 d-flex font-Cormorant-Garamond">
                         <input type="button" id="button" value="加入購物車" data-bs-toggle="modal" data-bs-target="#addcart"
-                            class="
-                            beigeBtn
-                            font-Noto-Serif
-                            d-inline-block
-                            rounded
-                            w-50
-                            w-md-40
-                            ">
+                            class="beigeBtn w-50 w-md-40 d-inline-block rounded font-Noto-Serif">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#favorite" class="heart1 w-50">
-                            <div class="ms-3 d-flex btn border-beige border-1 registerBtn ps-1">
-                                <i class="fas fa-heart ms-md-3 my-2 ms-4"></i>
-                                <p class="ps-md-3 ps-4 my-1 font-Noto-Serif fs-6">加入我的收藏</p>
+                            <div class="btn ms-3 d-flex border-1 border-beige registerBtn justify-content-center">
+                                <i class="fas fa-heart my-2"></i>
+                                <p class="ps-2 my-1 font-Noto-Serif fs-6">加入我的收藏</p>
                             </div>
                         </a>
                     </form>
@@ -206,7 +199,7 @@
         <div class="modal fade" id="favorite" tabindex="-1" aria-labelledby="favorite" style="display: none;" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-body beige text-align-center font-Noto-Serif">
+                    <div class="modal-body text-align-center font-Noto-Serif beige">
                         已加入我的收藏
                     </div><!--modal-body-->
                 </div><!--modal-content-->
@@ -217,7 +210,7 @@
         <div class="modal fade" id="addcart" tabindex="-1" aria-labelledby="addcart" style="display: none;" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-body beige text-align-center font-Noto-Serif">
+                    <div class="modal-body text-align-center font-Noto-Serif beige">
                         已加入購物車
                     </div><!--modal-body-->
                 </div><!--modal-content-->
@@ -229,8 +222,8 @@
     <!--footer-->
 
     <footer class="py-4">
-        <div class="container d-flex justify-content-between align-align-center">
-            <div class="footer-info d-flex align-align-center">
+        <div class="container justify-content-between d-flex">
+            <div class="footer-info d-flex">
                 <a href="./index.html">
                     <img src="./img/logo_2/logo.png" style="width: 50px; height: 50px;"  class="rounded-pill" alt="logo-footer">
                 </a>
@@ -238,7 +231,7 @@
                     © 2021. All Rights Reserved.
                 </p>
             </div><!--footer-info-->
-            <ul class="footer-nav d-md-flex d-none mt-3">
+            <ul class="footer-nav mt-3 d-none d-md-flex">
                 <li class="ml-8">
                     <a href="#" class="text-white">
                         <i class="fab fa-facebook"></i>
