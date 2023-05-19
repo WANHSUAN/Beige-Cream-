@@ -1,13 +1,19 @@
-# Beige-Cream-
- 
-### 專案主題：
 
-RWD 切版的虛擬飾品品牌
+# Beige & Cream
+
+An E-commerce jewelry website can easily find the desired products and add them to shopping cart.
+
+## Project
+
+[Beige & Cream](https://wanhsuan.github.io/Beige-Cream-/index.html)
 
 
-### 專案介紹：
+## Tech Stack
 
-1. 使用 Bootstrap 5 排版
-2. 購物車功能：使用到 JavaScript 中的 BOM 操作、DOM 操作、表格操作、Cookie、JSON
-4. 會員登入與註冊：使用 Cookie 與 localStorage 來存取註冊的帳號和密碼
-5. 版本控制工具：Git / Source Tree
+- Bootstrap 5
+- RWD
+
+
+## 🔗 My Page
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sharon-lin-81a436258/)
+
