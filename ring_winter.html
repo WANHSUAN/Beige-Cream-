@@ -1,269 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ring Winter</title>
-<link rel="stylesheet" href="./css/all.min.css">
-<!--字型-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Serif+TC:wght@200;300&display=swap" rel="stylesheet">
-<!--網址列圖示-->
-<link rel="icon" href="./img/logo_2/logo.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ring Winter</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Serif+TC:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/logo_2/logo.ico" type="image/x-icon" />
 
-<!--FA圖示-->
-<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-
-<!-- 操作 cookie 的 js 文件 -->
-<script type="text/javascript" src="./JS/cookies.js"></script>
-
-</head>
-<body>
-
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./JS/cookies.js"></script>
+  </head>
+  <body>
     <div class="wrapper">
+      <nav
+        class="navbar navbar-expand-lg sticky-top font-Cormorant-Garamond navbar-light"
+      >
+        <div class="container-fluid mx-4">
+          <h1 class="ml-md-4">
+            <a class="navbar-brand ms-5" href="./index.html">
+              <img
+                src="./img/logo_title/logo.png"
+                style="width: 160px; height: 70px"
+                alt="logo-header"
+              />
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search"></i>
+                  <span class="">Search</span>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <form class="d-flex mx-5 mx-md-2">
+                    <input
+                      class="form mx-2 font-Noto-Serif"
+                      type="search"
+                      placeholder="請輸入"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-info" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./log_in.html">
+                  <i class="fas fa-user"></i>
+                  <span class="">Log in</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-heart"></i>
+                  <span class="">Wishlist</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Cart</span>
+                  <i id="ccount">0</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <!--導覽列-->
-
-        <nav class="navbar navbar-expand-lg sticky-top font-Cormorant-Garamond navbar-light">
-            <div class="container-fluid mx-4">
-                <h1 class="ml-md-4">
-                    <a class="navbar-brand ms-5" href="./index.html">
-                        <img src="./img/logo_title/logo.png" style="width: 160px; height: 70px;" alt="logo-header">
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-search"></i>
-                                <span class="">Search</span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <form class="d-flex mx-5 mx-md-2">
-                                    <input class="form mx-2 font-Noto-Serif" type="search" placeholder="請輸入" aria-label="Search">
-                                    <button class="btn btn-outline-info" type="submit">Search</button>
-                                </form>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./log_in.html">
-                                <i class="fas fa-user"></i>
-                                <span class="">Log in</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-heart"></i>
-                                <span class="">Wishlist</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cart.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span>Cart</span>
-                                <i id="ccount">0</i>
-                            </a>
-                        </li>    
-                    </ul>
-                </div>
+      <div class="rings container">
+        <div class="row mt-68 mb-28 d-flex" pid="4">
+          <div class="col-12 col-lg-2 d-none d-lg-block font-Noto-Serif">
+            <div class="ms-1">
+              <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Earrings</h5>
+              <ul class="border-start-beige">
+                <li>
+                  <a href="./earrings_butterfly.html" class="product">
+                    如蝶翩翩耳環
+                  </a>
+                </li>
+                <li>
+                  <a href="./earrings_gold.html" class="product">
+                    金緻情緣耳環
+                  </a>
+                </li>
+                <li>
+                  <a href="./earrings_grey.html" class="product">
+                    黑圓扇耳環
+                  </a>
+                </li>
+              </ul>
             </div>
-        </nav>
+            <div class="ms-1">
+              <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Ring</h5>
+              <ul class="border-start-beige">
+                <li>
+                  <a href="./ring_winter.html" class="product"> 冬季戒指組 </a>
+                </li>
+                <li>
+                  <a href="./ring_blossom.html" class="product">
+                    浪漫櫻花銅戒
+                  </a>
+                </li>
+                <li>
+                  <a href="./ring_gold.html" class="product"> 金緻真心戒指 </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ms-1">
+              <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Glasses</h5>
+              <ul class="border-start-beige">
+                <li>
+                  <a href="./glasses_circle.html" class="product">
+                    細框圓眼鏡
+                  </a>
+                </li>
+                <li>
+                  <a href="./glasses_green.html" class="product">
+                    金緻綠墨鏡
+                  </a>
+                </li>
+                <li>
+                  <a href="./glasses_black.html" class="product">
+                    黑緻金邊墨鏡
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ms-1">
+              <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Necklace</h5>
+              <ul class="border-start-beige">
+                <li>
+                  <a href="./necklace_party.html" class="product">
+                    華麗派對項鍊
+                  </a>
+                </li>
+                <li>
+                  <a href="./necklace_daisy.html" class="product"> 雛菊項鍊 </a>
+                </li>
+                <li>
+                  <a href="./necklace_gold.html" class="product"> 金錐項鍊 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="./img/冬季戒指組.jpg" class="w-100" alt="冬季戒指組" />
+          </div>
+          <div class="col-12 col-lg-4 mt-sm-3 mt-lg-0">
+            <h2 class="titleText mb-4 font-Noto-Serif fw-bold">冬季戒指組</h2>
+            <p class="mt-3 mb-4 font-Noto-Serif fs-5">適合冬季搭配的四種戒指</p>
+            <small class="font-Cormorant-Garamond fs-6"
+              >NT$<span>480</span></small
+            >
+            <form action="#" class="mt-2 py-3 d-flex font-Cormorant-Garamond">
+              <input
+                type="button"
+                id="button"
+                value="加入購物車"
+                data-bs-toggle="modal"
+                data-bs-target="#addcart"
+                class="beigeBtn w-50 w-md-40 d-inline-block rounded font-Noto-Serif"
+              />
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#favorite"
+                class="heart1 w-50"
+              >
+                <div
+                  class="btn ms-3 d-flex border-1 border-beige registerBtn justify-content-center"
+                >
+                  <i class="fas fa-heart my-2"></i>
+                  <p class="ps-2 my-1 font-Noto-Serif fs-6">加入我的收藏</p>
+                </div>
+              </a>
+            </form>
 
-        <!--main 區塊-->
+            <div class="font-Noto-Serif">
+              <div class="mt-2">
+                <h4 class="fs-6 fw-bold">商品材質：</h4>
+                <p>
+                  <span class="font-Cormorant-Garamond">A</span> 級珍珠 / 銅
+                  (保色電鍍)
+                </p>
+                <h4 class="fs-6 fw-bold">尺寸：</h4>
+                <p>
+                  方形戒指內圍直徑約：
+                  <span class="font-Cormorant-Garamond">1.75cm</span> /
+                  國際戒圍： <span class="font-Cormorant-Garamond">#13</span
+                  ><br />
+                  兩款編織戒指內圍直徑約：<span class="font-Cormorant-Garamond"
+                    >1.6cm</span
+                  >
+                  / 國際戒圍： <span class="font-Cormorant-Garamond">#10</span
+                  ><br />
+                  圓板戒指內圍直徑約：<span class="font-Cormorant-Garamond"
+                    >1.55cm</span
+                  >
+                  / 國際戒圍： <span class="font-Cormorant-Garamond">#9</span>
+                </p>
+                <p>
+                  <span class="font-Cormorant-Garamond">Made In Korea</span
+                  ><br />
+                  提供
+                  <span class="font-Cormorant-Garamond">30</span> 日退換貨服務
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="rings container">
-            <div class="row mt-68 mb-28 d-flex" pid="4">
-                <div class="col-12 col-lg-2 d-none d-lg-block font-Noto-Serif">
-                    <div class="ms-1">
-                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Earrings</h5>
-                        <ul class="border-start-beige">
-                            <li>
-                                <a href="./earrings_butterfly.html" class="product">
-                                    如蝶翩翩耳環
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./earrings_gold.html" class="product">
-                                    金緻情緣耳環
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./earrings_grey.html" class="product">
-                                    黑圓扇耳環
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ms-1">
-                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Ring</h5>
-                        <ul class="border-start-beige">
-                            <li>
-                                <a href="./ring_winter.html" class="product">
-                                    冬季戒指組
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./ring_blossom.html" class="product">
-                                    浪漫櫻花銅戒
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./ring_gold.html" class="product">
-                                    金緻真心戒指
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ms-1">
-                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Glasses</h5>
-                        <ul class="border-start-beige">
-                            <li>
-                                <a href="./glasses_circle.html" class="product">
-                                    細框圓眼鏡
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./glasses_green.html" class="product">
-                                    金緻綠墨鏡
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./glasses_black.html" class="product">
-                                    黑緻金邊墨鏡
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ms-1">
-                        <h5 class="font-Cormorant-Garamond fs-5 fw-bold">Necklace</h5>
-                        <ul class="border-start-beige">
-                            <li>
-                                <a href="./necklace_party.html" class="product">
-                                    華麗派對項鍊
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./necklace_daisy.html" class="product">
-                                    雛菊項鍊
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./necklace_gold.html" class="product">
-                                    金錐項鍊
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!--col-lg-2-->
-                <div class="col-12 col-lg-6">
-                    <img src="./img/冬季戒指組.jpg" class="w-100" alt="冬季戒指組">
-                </div><!--col-lg-6-->
-                <div class="col-12 col-lg-4 mt-sm-3 mt-lg-0">
-                    <h2 class="titleText mb-4 font-Noto-Serif fw-bold">冬季戒指組</h2>
-                    <p class="mt-3 mb-4 font-Noto-Serif fs-5">適合冬季搭配的四種戒指</p>
-                    <small class="font-Cormorant-Garamond fs-6">NT$<span>480</span></small>
-                    <form action="#" class="mt-2 py-3 d-flex font-Cormorant-Garamond">
-                        <input type="button" id="button" value="加入購物車" data-bs-toggle="modal" data-bs-target="#addcart"
-                            class="beigeBtn w-50 w-md-40 d-inline-block rounded font-Noto-Serif">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#favorite" class="heart1 w-50">
-                            <div class="btn ms-3 d-flex border-1 border-beige registerBtn justify-content-center">
-                                <i class="fas fa-heart my-2"></i>
-                                <p class="ps-2 my-1 font-Noto-Serif fs-6">加入我的收藏</p>
-                            </div>
-                        </a>
-                    </form>
-                
-                    <div class="font-Noto-Serif">
-                        <div class="mt-2">
-                            <h4 class="fs-6 fw-bold">商品材質：</h4>
-                            <p><span class="font-Cormorant-Garamond">A</span> 級珍珠 / 銅 (保色電鍍)</p>
-                            <h4 class="fs-6 fw-bold">尺寸：</h4>
-                            <p>
-                                方形戒指內圍直徑約： <span class="font-Cormorant-Garamond">1.75cm</span> / 國際戒圍： <span class="font-Cormorant-Garamond">#13</span><br>
-                                兩款編織戒指內圍直徑約：<span class="font-Cormorant-Garamond">1.6cm</span> / 國際戒圍： <span class="font-Cormorant-Garamond">#10</span><br>
-                                圓板戒指內圍直徑約：<span class="font-Cormorant-Garamond">1.55cm</span> / 國際戒圍： <span class="font-Cormorant-Garamond">#9</span>
-                            </p>
-                            <p>
-                                <span class="font-Cormorant-Garamond">Made In Korea</span><br>
-                                提供 <span class="font-Cormorant-Garamond">30</span> 日退換貨服務
-                            </p>
-                        </div>
-                    </div>
-                </div><!--col-lg-4-->
-            </div><!--row-->
-        </div><!--container-->
+      <div
+        class="modal fade"
+        id="favorite"
+        tabindex="-1"
+        aria-labelledby="favorite"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-align-center font-Noto-Serif beige">
+              已加入我的收藏
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-        <!--modal 加入我的收藏-->
-        <div class="modal fade" id="favorite" tabindex="-1" aria-labelledby="favorite" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body text-align-center font-Noto-Serif beige">
-                        已加入我的收藏
-                    </div><!--modal-body-->
-                </div><!--modal-content-->
-            </div><!--modal-dialog-->
-        </div><!--modal-->
-
-        <!--modal 加入購物車-->
-        <div class="modal fade" id="addcart" tabindex="-1" aria-labelledby="addcart" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body text-align-center font-Noto-Serif beige">
-                        已加入購物車
-                    </div><!--modal-body-->
-                </div><!--modal-content-->
-            </div><!--modal-dialog-->
-        </div><!--modal-->
-
+      <div
+        class="modal fade"
+        id="addcart"
+        tabindex="-1"
+        aria-labelledby="addcart"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-align-center font-Noto-Serif beige">
+              已加入購物車
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-     
-    <!--footer-->
 
     <footer class="py-4">
-        <div class="container justify-content-between d-flex">
-            <div class="footer-info d-flex">
-                <a href="./index.html">
-                    <img src="./img/logo_2/logo.png" style="width: 50px; height: 50px;"  class="rounded-pill" alt="logo-footer">
-                </a>
-                <p class="copyright ml-4 mt-3 font-Cormorant-Garamond">
-                    © 2021. All Rights Reserved.
-                </p>
-            </div><!--footer-info-->
-            <ul class="footer-nav mt-3 d-none d-md-flex">
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-line"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul><!--footer-nav-->
-        </div><!--container-->
+      <div class="container justify-content-between d-flex">
+        <div class="footer-info d-flex">
+          <a href="./index.html">
+            <img
+              src="./img/logo_2/logo.png"
+              style="width: 50px; height: 50px"
+              class="rounded-pill"
+              alt="logo-footer"
+            />
+          </a>
+          <p class="copyright ml-4 mt-3 font-Cormorant-Garamond">
+            © 2021. All Rights Reserved.
+          </p>
+        </div>
+        <ul class="footer-nav mt-3 d-none d-md-flex">
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-line"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-<script src="./JS/server.js"></script>
-<script src="./JS/page.js"></script>
-
-</body>
+    <script src="./JS/server.js"></script>
+    <script src="./JS/page.js"></script>
+  </body>
 </html>

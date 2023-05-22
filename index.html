@@ -1,575 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BEIGE & CREAM</title>
-<link rel="stylesheet" href="./css/all.min.css">
-<script src="./JS/cookies.js" type="text/javascript" charset="utf-8"></script>
-<!--字型-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Serif+TC:wght@200;300&display=swap" rel="stylesheet">
-<!--網址列圖示-->
-<link rel="icon" href="./img/logo_2/logo.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEIGE & CREAM</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <script
+      src="./JS/cookies.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Serif+TC:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/Logo_2/logo.ico" type="image/x-icon" />
 
-<!--FA圖示-->
-<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-
-</head>
-<body>
-
-    
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="wrapper">
-        
-        <!--導覽列-->
-
-        <nav class="navbar navbar-expand-lg fixed-top font-Cormorant-Garamond navbar-light">
-            <div class="container-fluid mx-4">
-                <h1 class="ml-md-4">
-                    <a class="navbar-brand ms-5" href="./index.html">
-                        <img src="./img/logo_title/logo.png" style="width: 160px; height: 70px;" alt="logo-header">
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-search"></i>
-                                <span>Search</span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <form class="d-flex mx-5 mx-md-2">
-                                    <input class="form mx-2 font-Noto-Serif" type="search" placeholder="請輸入" aria-label="Search">
-                                    <button class="btn btn-outline-info" type="submit">Search</button>
-                                </form>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./log_in.html">
-                                <i class="fas fa-user"></i>
-                                <span>Log in</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-heart"></i>
-                                <span>Wishlist</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cart.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span>Cart</span>
-                                <i id="ccount">0</i>
-                            </a>
-                        </li>    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!--banner 區塊-->
-
-        <div class="banner d-flex">
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators mb-4">
-                        <button type="button" style="width:10px;height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" style="width:10px;height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" style="width:10px;height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" style="width:10px;height:10px;border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#earrings">
-                                <img src="./img/banner_耳環.jpg" class="d-block w-100" alt="banner_耳環">
-                                <div class="carousel-caption d-none d-md-block font-Cormorant-Garamond">
-                                    <h5 class="fs-2">Earrings</h5> 
-                                    <p class="font-Noto-Serif">為了讓平價和美麗可以並肩而行，<br>用比市面上還要低價的經營理念，把優質的飾品分享給愛漂亮的妳。</p>
-                                </div>
-                            </a> 
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#ring">
-                                <img src="./img/banner_戒指.jpg" class="d-block w-100" alt="banner_耳環">
-                                <div class="carousel-caption d-none d-md-block font-Cormorant-Garamond">
-                                    <h5 class="fs-2">Ring</h5> 
-                                    <p class="font-Noto-Serif">開闢一個平價飾品的世界，讓女孩們擁有眾多流行的飾品選擇。</p>
-                                </div>
-                            </a> 
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#glasses">
-                                <img src="./img/banner_眼鏡.jpg" class="d-block w-100" alt="banner_項鍊">
-                                <div class="carousel-caption d-none d-md-block font-Cormorant-Garamond">
-                                    <h5 class="fs-2">Glasses</h5>
-                                    <p class="font-Noto-Serif">
-                                        <span class="font-Cormorant-Garamond">BEIGE & CREAM </span> 提供完善的售後服務以保障買家權益。</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#necklace">
-                                <img src="./img/banner_項鍊.jpg" class="d-block w-100" alt="banner_項鍊">
-                                <div class="carousel-caption d-none d-md-block font-Cormorant-Garamond">
-                                    <h5 class="fs-2">Necklace</h5>
-                                    <p class="font-Noto-Serif">
-                                        所有商品皆享有 <span class="font-Cormorant-Garamond">30</span> 日的售後服務，<br>
-                                        請買家收到商品後記得先檢查哦！</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+      <nav
+        class="navbar navbar-expand-lg fixed-top font-Cormorant-Garamond navbar-light"
+      >
+        <div class="container-fluid mx-4">
+          <h1 class="ml-md-4">
+            <a class="navbar-brand ms-5" href="./index.html">
+              <img
+                src="./img/Logo/logoTitle.png"
+                style="width: 160px; height: 70px"
+                alt="logo-header"
+              />
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search"></i>
+                  <span>Search</span>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <form class="d-flex mx-5 mx-md-2">
+                    <input
+                      class="form mx-2 font-Noto-Serif"
+                      type="search"
+                      placeholder="請輸入"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-info" type="submit">
+                      Search
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div><!--container-->
-        </div><!--banner-->
+                  </form>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./log_in.html">
+                  <i class="fas fa-user"></i>
+                  <span>Log in</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-heart"></i>
+                  <span>Wishlist</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Cart</span>
+                  <i id="ccount">0</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-
-
-        <!--耳環 區塊-->
-
-        <div class="ring container" id="earrings">
-            <div class="row my-5">
-                <div class="box col-md-4 mb-3" pid="1">
-                    <div class="img changeImg">
-                        <a href="./earrings_butterfly.html">
-                            <img src="./img/如蝶翩翩耳環.jpg" class="w-100" alt="如蝶翩翩耳環">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">如蝶翩翩耳環</h5>
-                        </div>
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>400</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="2">
-                    <div class="img changeImg">
-                        <a href="./earrings_gold.html">
-                            <img src="./img/金緻情緣耳環.jpg" class="w-100" alt="金緻情緣耳環">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">金緻情緣耳環</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>350</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart-->
-                    </div><!-- mt-3 -->
-                </div><!--box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="3">
-                    <div class="img changeImg">
-                        <a href="./earrings_grey.html">
-                            <img src="./img/黑圓扇耳環.jpg" class="w-100" alt="黑圓扇耳環">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">黑圓扇耳環</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond text-muted fs-6">
-                                NT$<span>450</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!--box col-md-4-->
+      <div class="banner d-flex">
+        <div class="container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators mb-4">
+              <button
+                type="button"
+                style="width: 10px; height: 10px; border-radius: 50%"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                style="width: 10px; height: 10px; border-radius: 50%"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                style="width: 10px; height: 10px; border-radius: 50%"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                style="width: 10px; height: 10px; border-radius: 50%"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
             </div>
-        </div><!--container-->
-
-
-        <!--戒指 區塊-->
-
-        <div class="ring container" id="ring">
-            <div class="row my-5">
-                <div class="box col-md-4 mb-3" pid="4">
-                    <div class="img changeImg">
-                        <a href="./ring_winter.html">
-                            <img src="./img/冬季戒指組.jpg" class="w-100" alt="冬季戒指組">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">冬季戒指組</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>480</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="5">
-                    <div class="img changeImg">
-                        <a href="./ring_blossom.html">
-                            <img src="./img/浪漫櫻花銅戒.jpg" class="w-100" alt="浪漫櫻花銅戒">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">浪漫櫻花銅戒</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>380</span>
-                            </small>
-                            <a href="#" class="icon mt-3 text-align-center">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="6">
-                    <div class="img changeImg">
-                        <a href="./ring_gold.html">
-                            <img src="./img/金緻真心戒指.jpg" class="w-100" alt="金緻真心戒指">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">金緻真心戒指</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>360</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#earrings">
+                  <img
+                    src="./img/banner_耳環.jpg"
+                    class="d-block w-100"
+                    alt="banner_耳環"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block font-Cormorant-Garamond"
+                  >
+                    <h5 class="fs-2">Earrings</h5>
+                    <p class="font-Noto-Serif">
+                      為了讓平價和美麗可以並肩而行，<br />用比市面上還要低價的經營理念，把優質的飾品分享給愛漂亮的妳。
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#ring">
+                  <img
+                    src="./img/banner_戒指.jpg"
+                    class="d-block w-100"
+                    alt="banner_耳環"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block font-Cormorant-Garamond"
+                  >
+                    <h5 class="fs-2">Ring</h5>
+                    <p class="font-Noto-Serif">
+                      開闢一個平價飾品的世界，讓女孩們擁有眾多流行的飾品選擇。
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#glasses">
+                  <img
+                    src="./img/banner_眼鏡.jpg"
+                    class="d-block w-100"
+                    alt="banner_項鍊"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block font-Cormorant-Garamond"
+                  >
+                    <h5 class="fs-2">Glasses</h5>
+                    <p class="font-Noto-Serif">
+                      <span class="font-Cormorant-Garamond"
+                        >BEIGE & CREAM
+                      </span>
+                      提供完善的售後服務以保障買家權益。
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="#necklace">
+                  <img
+                    src="./img/banner_項鍊.jpg"
+                    class="d-block w-100"
+                    alt="banner_項鍊"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block font-Cormorant-Garamond"
+                  >
+                    <h5 class="fs-2">Necklace</h5>
+                    <p class="font-Noto-Serif">
+                      所有商品皆享有
+                      <span class="font-Cormorant-Garamond">30</span>
+                      日的售後服務，<br />
+                      請買家收到商品後記得先檢查哦！
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-        </div><!--container-->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
 
+      <div class="ring container" id="earrings">
+        <div class="row my-5">
+          <div class="box col-md-4 mb-3" pid="1">
+            <div class="img changeImg">
+              <a href="./earrings_butterfly.html">
+                <img
+                  src="./img/如蝶翩翩耳環.jpg"
+                  class="w-100"
+                  alt="如蝶翩翩耳環"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">如蝶翩翩耳環</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>400</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="2">
+            <div class="img changeImg">
+              <a href="./earrings_gold.html">
+                <img
+                  src="./img/金緻情緣耳環.jpg"
+                  class="w-100"
+                  alt="金緻情緣耳環"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">金緻情緣耳環</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>350</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="3">
+            <div class="img changeImg">
+              <a href="./earrings_grey.html">
+                <img
+                  src="./img/黑圓扇耳環.jpg"
+                  class="w-100"
+                  alt="黑圓扇耳環"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">黑圓扇耳環</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond text-muted fs-6"
+                >
+                  NT$<span>450</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!--眼鏡 區塊-->
+      <div class="ring container" id="ring">
+        <div class="row my-5">
+          <div class="box col-md-4 mb-3" pid="4">
+            <div class="img changeImg">
+              <a href="./ring_winter.html">
+                <img
+                  src="./img/冬季戒指組.jpg"
+                  class="w-100"
+                  alt="冬季戒指組"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">冬季戒指組</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>480</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="5">
+            <div class="img changeImg">
+              <a href="./ring_blossom.html">
+                <img
+                  src="./img/浪漫櫻花銅戒.jpg"
+                  class="w-100"
+                  alt="浪漫櫻花銅戒"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">浪漫櫻花銅戒</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>380</span>
+                </small>
+                <a href="#" class="icon mt-3 text-align-center">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="6">
+            <div class="img changeImg">
+              <a href="./ring_gold.html">
+                <img
+                  src="./img/金緻真心戒指.jpg"
+                  class="w-100"
+                  alt="金緻真心戒指"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">金緻真心戒指</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>360</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="glasses container mb-3" id="glasses">
-            <div class="row my-5">
-                <div class="box col-md-4 mb-3" pid="7">
-                    <div class="img changeImg">
-                        <a href="./glasses_circle.html">
-                            <img src="./img/細框圓眼鏡.jpg" class="w-100" alt="細框圓眼鏡">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">細框圓眼鏡</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>3400</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="8">
-                    <div class="img changeImg">
-                        <a href="./glasses_green.html">
-                            <img src="./img/金緻綠墨鏡.jpg" class="w-100" alt="金緻綠墨鏡">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">金緻綠墨鏡</h5>
-                        </div><!-- text -->
-                        <div class="price_cart">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted">
-                                NT$<span>3800</span>
-                            </small>
-                            <a href="#" class="icon text-align-center mt-3">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-white" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-                <div class="box col-md-4 mb-3" pid="9">
-                    <div class="img changeImg">
-                        <a href="./glasses_black.html">
-                            <img src="./img/黑緻金邊墨鏡.jpg" class="w-100" alt="黑緻金邊墨鏡">
-                        </a>
-                    </div>
-                    <div class="text-align-center mt-3 mt-md-4">
-                        <div class="text">
-                            <hr class="mb-3">
-                            <h5 class="font-Noto-Serif fw-bold">黑緻金邊墨鏡</h5>
-                        </div><!-- text -->
-                        <div class="price_cart mb-5">
-                            <small class="d-block my-3 font-Cormorant-Garamond fs-6  text-muted">
-                                NT$<span>3600</span>
-                            </small>
-                            <a href="#" class="icon mt-3 mb-5 text-align-center">
-                                <span class="fs-6" data-bs-toggle="modal" data-bs-target="#favorite">
-                                    <i class="fas fa-heart heart beige"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="shopping-cart">
-                                <button class="border-0 fs-6 bg-transparent" data-bs-toggle="modal" data-bs-target="#addcart">
-                                    <i class="fas fa-shopping-cart cart beige"></i>
-                                </button>
-                            </a>
-                        </div><!-- price_cart -->
-                    </div><!-- mt-3 -->
-                </div><!-- box col-md-4-->
-            </div><!-- row -->
-        </div><!--container-->
+      <div class="glasses container mb-3" id="glasses">
+        <div class="row my-5">
+          <div class="box col-md-4 mb-3" pid="7">
+            <div class="img changeImg">
+              <a href="./glasses_circle.html">
+                <img
+                  src="./img/細框圓眼鏡.jpg"
+                  class="w-100"
+                  alt="細框圓眼鏡"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">細框圓眼鏡</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>3400</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="8">
+            <div class="img changeImg">
+              <a href="./glasses_green.html">
+                <img
+                  src="./img/金緻綠墨鏡.jpg"
+                  class="w-100"
+                  alt="金緻綠墨鏡"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">金緻綠墨鏡</h5>
+              </div>
+              <div class="price_cart">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>3800</span>
+                </small>
+                <a href="#" class="icon text-align-center mt-3">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-3" pid="9">
+            <div class="img changeImg">
+              <a href="./glasses_black.html">
+                <img
+                  src="./img/黑緻金邊墨鏡.jpg"
+                  class="w-100"
+                  alt="黑緻金邊墨鏡"
+                />
+              </a>
+            </div>
+            <div class="text-align-center mt-3 mt-md-4">
+              <div class="text">
+                <hr class="mb-3" />
+                <h5 class="font-Noto-Serif fw-bold">黑緻金邊墨鏡</h5>
+              </div>
+              <div class="price_cart mb-5">
+                <small
+                  class="d-block my-3 font-Cormorant-Garamond fs-6 text-muted"
+                >
+                  NT$<span>3600</span>
+                </small>
+                <a href="#" class="icon mt-3 mb-5 text-align-center">
+                  <span
+                    class="fs-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#favorite"
+                  >
+                    <i class="fas fa-heart heart beige"></i>
+                  </span>
+                </a>
+                <a href="#" class="shopping-cart">
+                  <button
+                    class="border-0 fs-6 bg-transparent"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addcart"
+                  >
+                    <i class="fas fa-shopping-cart cart beige"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-        <!--項鍊 區塊-->
-
-        <div class="necklace container-fluid bg-necklace py-md-5" id="necklace">
+      <div class="necklace container-fluid bg-necklace py-md-5" id="necklace">
         <div class="box row" pid="10">
-            <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
-                <a href="./necklace_party.html" >
-                    <img src="./img/華麗派對項鍊.jpg" class="w-md-100 changeImg" alt="華麗派對項鍊">
-                </a>
-            </div><!--col-lg-6-->
-            <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
-                <div class="row text-align-center py-md-4 bg-title">
-                    <hr class="d-none">
-                    <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">華麗派對項鍊</h3>
-                </div><!--row-->
-                <div class="row text-align-center d-block font-Noto-Serif bg-text">
-                    <small class="text-align-center my-3 d-inline-block font-Cormorant-Garamond fs-6 text-muted">
-                        NT$<span>3600</span>
-                    </small>
-                    <a href="#" class="icon">
-                        <span class="fs-4" data-bs-toggle="modal" data-bs-target="#favorite">
-                            <i class="fas fa-heart heart beige"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="shopping-cart">
-                        <button class="mb-3 border-0 fs-4 bg-transparent" data-bs-toggle="modal" data-bs-target="#addcart">
-                            <i class="fas fa-shopping-cart cart beige"></i>
-                        </button>
-                    </a>
-                </div><!--row-->
-            </div><!--col-lg-4-->
-        </div><!-- box row-->
+          <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
+            <a href="./necklace_party.html">
+              <img
+                src="./img/華麗派對項鍊.jpg"
+                class="w-md-100 changeImg"
+                alt="華麗派對項鍊"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
+            <div class="row text-align-center py-md-4 bg-title">
+              <hr class="d-none" />
+              <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">華麗派對項鍊</h3>
+            </div>
+            <div class="row text-align-center d-block font-Noto-Serif bg-text">
+              <small
+                class="text-align-center my-3 d-inline-block font-Cormorant-Garamond fs-6 text-muted"
+              >
+                NT$<span>3600</span>
+              </small>
+              <a href="#" class="icon">
+                <span
+                  class="fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#favorite"
+                >
+                  <i class="fas fa-heart heart beige"></i>
+                </span>
+              </a>
+              <a href="#" class="shopping-cart">
+                <button
+                  class="mb-3 border-0 fs-4 bg-transparent"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addcart"
+                >
+                  <i class="fas fa-shopping-cart cart beige"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="box row" pid="11">
-            <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
-                <a href="./necklace_daisy.html">
-                    <img src="./img/雛菊項鍊.jpg" class="w-100 changeImg" alt="雛菊項鍊">
-                </a>
-            </div><!--col-lg-6-->
-            <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
-                <div class="row text-align-center py-md-4 bg-title">
-                    <hr class="d-none">
-                    <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">雛菊項鍊</h3>
-                </div><!--row-->
-                <div class="row text-align-center d-block font-Noto-Serif bg-text">
-                    <small class="text-align-center my-3 d-inline-block font-Cormorant-Garamond fs-6 text-muted">
-                        NT$<span>3600</span>
-                    </small>
-                    <a href="#" class="icon">
-                        <span class="fs-4" data-bs-toggle="modal" data-bs-target="#favorite">
-                            <i class="fas fa-heart heart beige"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="shopping-cart">
-                        <button class="mb-3 border-0 fs-4 bg-transparent" data-bs-toggle="modal" data-bs-target="#addcart">
-                            <i class="fas fa-shopping-cart cart beige"></i>
-                        </button>
-                    </a>
-                </div><!--row-->
-            </div><!--col-lg-4-->
-        </div><!-- box row-->
+          <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
+            <a href="./necklace_daisy.html">
+              <img
+                src="./img/雛菊項鍊.jpg"
+                class="w-100 changeImg"
+                alt="雛菊項鍊"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
+            <div class="row text-align-center py-md-4 bg-title">
+              <hr class="d-none" />
+              <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">雛菊項鍊</h3>
+            </div>
+            <div class="row text-align-center d-block font-Noto-Serif bg-text">
+              <small
+                class="text-align-center my-3 d-inline-block font-Cormorant-Garamond fs-6 text-muted"
+              >
+                NT$<span>3600</span>
+              </small>
+              <a href="#" class="icon">
+                <span
+                  class="fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#favorite"
+                >
+                  <i class="fas fa-heart heart beige"></i>
+                </span>
+              </a>
+              <a href="#" class="shopping-cart">
+                <button
+                  class="mb-3 border-0 fs-4 bg-transparent"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addcart"
+                >
+                  <i class="fas fa-shopping-cart cart beige"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="box row" pid="12">
-            <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
-                <a href="./necklace_gold.html">
-                    <img src="./img/金錐項鍊.jpg" class="w-100 changeImg" alt="金錐項鍊">
-                </a>
-            </div><!--col-lg-6-->
-            <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
-                <div class="row text-align-center py-md-4 bg-title">
-                    <hr class="d-none">
-                    <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">金錐項鍊</h3>
-                </div> <!--row-->
-                <div class="row text-align-center d-block font-Noto-Serif bg-text">
-                    <small class="text-align-center my-3  d-inline-block font-Cormorant-Garamond fs-6 text-muted">
-                        NT$<span>400</span>
-                    </small>
-                    <a href="#" class="icon">
-                        <span class="fs-4" data-bs-toggle="modal" data-bs-target="#favorite">
-                            <i class="fas fa-heart heart beige"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="shopping-cart">
-                        <button class="mb-3 border-0 fs-4 bg-transparent" data-bs-toggle="modal" data-bs-target="#addcart">
-                            <i class="fas fa-shopping-cart cart beige"></i>
-                        </button>
-                    </a>
-                </div><!--row-->
-            </div><!--col-lg-4-->
-        </div><!-- box row-->
-        </div><!--container-->
+          <div class="col-12 col-lg-6 ms-0 ms-lg-5 my-0 my-md-5 p-0">
+            <a href="./necklace_gold.html">
+              <img
+                src="./img/金錐項鍊.jpg"
+                class="w-100 changeImg"
+                alt="金錐項鍊"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 align-self-center mt-0 my-md-5">
+            <div class="row text-align-center py-md-4 bg-title">
+              <hr class="d-none" />
+              <h3 class="p-3 p-md-1 font-Noto-Serif fs-3">金錐項鍊</h3>
+            </div>
+            <div class="row text-align-center d-block font-Noto-Serif bg-text">
+              <small
+                class="text-align-center my-3 d-inline-block font-Cormorant-Garamond fs-6 text-muted"
+              >
+                NT$<span>400</span>
+              </small>
+              <a href="#" class="icon">
+                <span
+                  class="fs-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#favorite"
+                >
+                  <i class="fas fa-heart heart beige"></i>
+                </span>
+              </a>
+              <a href="#" class="shopping-cart">
+                <button
+                  class="mb-3 border-0 fs-4 bg-transparent"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addcart"
+                >
+                  <i class="fas fa-shopping-cart cart beige"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!--modal 加入我的收藏-->
-        <div class="modal fade" id="favorite" tabindex="-1" aria-labelledby="favorite" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body text-align-center font-Noto-Serif beige">
-                        已加入我的收藏
-                    </div><!--modal-body-->
-                </div><!--modal-content-->
-            </div><!--modal-dialog-->
-        </div><!--modal-->
+      <div
+        class="modal fade"
+        id="favorite"
+        tabindex="-1"
+        aria-labelledby="favorite"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-align-center font-Noto-Serif beige">
+              已加入我的收藏
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!--modal 加入購物車-->
-        <div class="modal fade" id="addcart" tabindex="-1" aria-labelledby="addcart" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body text-align-center font-Noto-Serif beige ">
-                        已加入購物車
-                    </div><!--modal-body-->
-                </div><!--modal-content-->
-            </div><!--modal-dialog-->
-        </div><!--modal-->
+      <div
+        class="modal fade"
+        id="addcart"
+        tabindex="-1"
+        aria-labelledby="addcart"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-align-center font-Noto-Serif beige">
+              已加入購物車
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!--footer-->
-
     <footer class="py-4">
-        <div class="container justify-content-between d-flex">
-            <div class="footer-info d-flex">
-                <a href="./index.html">
-                    <img src="./img/logo_2/logo.png" style="width: 50px; height: 50px;"  class="rounded-pill" alt="logo-footer">
-                </a>
-                <p class="copyright ml-4 mt-3 font-Cormorant-Garamond">
-                    © 2021. All Rights Reserved.
-                </p>
-            </div><!--footer-info-->
-            <ul class="footer-nav mt-3 d-none d-md-flex">
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-line"></i>
-                    </a>
-                </li>
-                <li class="ml-8">
-                    <a href="#" class="text-white">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul><!--footer-nav-->
-        </div><!--container-->
+      <div class="container justify-content-between d-flex">
+        <div class="footer-info d-flex">
+          <a href="./index.html">
+            <img
+              src="./img/Logo/logo.png"
+              style="width: 50px; height: 50px"
+              class="rounded-pill"
+              alt="logo-footer"
+            />
+          </a>
+          <p class="copyright ml-4 mt-3 font-Cormorant-Garamond">
+            © 2021. All Rights Reserved.
+          </p>
+        </div>
+        <ul class="footer-nav mt-3 d-none d-md-flex">
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-line"></i>
+            </a>
+          </li>
+          <li class="ml-8">
+            <a href="#" class="text-white">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<!-- 數據訪問層，操作本地數據的模塊 -->
-<script type="text/javascript" src="./JS/server.js"></script>
-<!-- 本頁面的js操作 -->
-<script type="text/javascript" src="./JS/index.js"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./JS/server.js"></script>
+    <script type="text/javascript" src="./JS/index.js"></script>
+  </body>
 </html>
